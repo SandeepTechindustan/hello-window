@@ -11,7 +11,9 @@ export default class MyComponent extends React.Component {
 		super(props);
 
 		this.state = {
-			header: 'This is header Component',
+			header:{
+				title: 'Cornet Technology India',
+			},
 			sidebar: {
 				name: 'Vinod',
 				age: 29
@@ -23,32 +25,26 @@ export default class MyComponent extends React.Component {
 	}
 	render() {
 		return (
-			<div>
-				<Grid>
+			<div className="container-fluid">
 					<Row>
-						<Col md={4} style={{backgroundColor: '#000', color:'#fff', height:'100vh'}}>
-							<Sidebar sidebar={this.state.sidebar} />
-						</Col>
-						<Col md={8}>
-							<Row>
-								<Col md={12} style={{height:'80px', backgroundColor:'orange'}}>
-									<Header header={this.state.header} />
-								</Col>
-							</Row>
-							<Row>
-								<Col md={12} style={{height: '84vh',backgroundColor:'lightblue'}}>	
-									<Body body={this.state.body} />
-								</Col>	
-							</Row>
-							<Row>
-								<Col md={12} style={{backgroundColor:'orange'}}>
-									<Footer footer={this.state.footer} />
-								</Col>
-							</Row>
+						<Col md={12}>
+							<Header header={this.state.header} />
 						</Col>
 					</Row>
-				</Grid>
+					<Row>
+						<Col md={3} sm={3} xs={3} style={{backgroundColor: '#1f2733', color:'#fff', height: '500px'}}>
+							<Sidebar sidebar={this.state.sidebar} />
+						</Col>
+						<Col md={9} sm={9} xs={9}style={{backgroundColor:'lightblue', height: '500px'}}>	
+							<Body body={this.state.body} />
+						</Col>
+					</Row>
+					<Row>
+						<Col md={12} sm={12} xs={12} style={{backgroundColor:'#1f2733',color: 'white',padding:'5px'}}>
+							<Footer footer={this.state.footer} />
+						</Col>
+					</Row>
 			</div>
-			)
+		)
 	}
 }
