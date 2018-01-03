@@ -2,6 +2,8 @@ import React from 'react'
 import { Row, Col } from 'react-bootstrap'
 import UserForm from './UserForm'
 import BookForm from './BookForm'
+import { Route } from 'react-router-dom'
+import About from './About'
 
 export default class Body extends React.Component {
 	constructor(props){

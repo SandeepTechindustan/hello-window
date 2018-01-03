@@ -3,6 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Body from './Body'
 import Sidebar from './Sidebar'
+import { BrowserRouter as Router, Route} from 'react-router-dom'
 
 import { Grid, Row, Col } from 'react-bootstrap'
 
