@@ -20,7 +20,7 @@ export default class Sidebar extends React.Component {
 					<Link to="/about" >about</Link>
 				</div>
 				<div>
-					<a href="" >contact</a>
+					<Link to="/contact" >contact</Link>
 				</div>
 				<div>
 					<a href="" >privacy policy</a>

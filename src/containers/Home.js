@@ -7,6 +7,7 @@ import {
 	Radio,
 	Button
 } from 'react-bootstrap'
+import { Link } from 'react-router-dom' 
 
 export default class Home extends React.Component {
 	constructor(props) {
@@ -51,6 +52,8 @@ export default class Home extends React.Component {
 					<Col xs={12}>
 						<Row>
 							<Col xsOffset={4} xs={4}>
+								<Link to="/contact">Contact</Link>
+								<Link to="/home">Home</Link>
 								<form onSubmit={this.onSubmit}>
 									<FormGroup>
 										<label>First Name</label>
