@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, Tab, Tabs } from 'react-bootstrap'
 import UserForm from './UserForm'
 import BookForm from './BookForm'
 import { Route } from 'react-router-dom'
@@ -47,23 +47,35 @@ export default class Body extends React.Component {
 		console.log(this.props)
 		return (
 			<div>
-				{this.props.body}
 				<Row>
-					<Col xs={4}>
-						<UserForm
-							user={this.state.user}
-							handleChange={this.handleChange}
-							handleSubmit={this.handleSubmit}
-						/>
-					</Col>
-					<Col xs={4}>
-						<BookForm
-							book={this.state.book}
-							handleChangeBook={this.handleChangeBook}
-							handleSubmitBook={this.handleSubmitBook}
-						/>
-					</Col>
-					<Col xs={4}></Col>
+
+
+				</Row>
+				<Row>
+					<Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
+						<Tab eventKey={1} title="Users">
+							<Row>
+								<Col xs={4} xsOffset={4}>
+									<UserForm
+										user={this.state.user}
+										handleChange={this.handleChange}
+										handleSubmit={this.handleSubmit}
+									/>
+								</Col>
+							</Row>
+						</Tab>
+						<Tab eventKey={2} title="Books">
+							<Row>
+								<Col xs={4} xsOffset={4}>
+									<BookForm
+										book={this.state.book}
+										handleChangeBook={this.handleChangeBook}
+										handleSubmitBook={this.handleSubmitBook}
+									/>
+								</Col>
+							</Row>
+						</Tab>
+					</Tabs>
 				</Row>
 			</div>
 			)

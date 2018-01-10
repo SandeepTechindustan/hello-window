@@ -16,8 +16,8 @@ export default class MyComponent extends React.Component {
 				title: 'Cornet Technology India',
 			},
 			sidebar: {
-				name: 'Vinod',
-				age: 29
+				name: '',
+				age: '',
 			},
 			footer: 'This is Footer component',
 			body: 'This is the body'
