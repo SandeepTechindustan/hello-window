@@ -54,28 +54,7 @@ export default class Home extends React.Component {
 							<Col xsOffset={4} xs={4}>
 								<Link to="/contact">Contact</Link>
 								<Link to="/home">Home</Link>
-								
-							</Col>
-						</Row>
-					</Col>
-					<Col xs={12}
-						
-					</Col>
-				</Row>
-			</div>
-		)
-	}
-}
-
-
-const modal1 = (props) =>{
-
-<div>
-<modal.header>
-	<h1>Home Form</h1>
-</modal.header>
-<modal.body>
-<form onSubmit={this.onSubmit}>
+								<form onSubmit={this.onSubmit}>
 									<FormGroup>
 										<label>First Name</label>
 										<FormControl type="text" value={first_name} placeholder="First Name" onChange={this.onChange.bind(this, 'first_name')} />
@@ -120,13 +99,14 @@ const modal1 = (props) =>{
 										<Button type="reset">Cancel</Button>
 									</FormGroup>
 								</form>
-	
-</modal.body>
-<modal.footer>
-	
-</modal.footer>
-
-</div>
-
-
+							</Col>
+						</Row>
+					</Col>
+					<Col xs={12}>
+						
+					</Col>
+				</Row>
+			</div>
+		)
+	}
 }

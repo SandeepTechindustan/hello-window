@@ -1,0 +1,64 @@
+.dashboard{
+	padding:30px;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #c1bdbd;
+}
+
+.page-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 550;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #00CA79;
+    margin-bottom: 10px;
+}
+.userPanel {
+	background-color: #4380B8;
+	padding:20px;
+	height:20vh;
+	color: #fff;
+}
+
+.nav li {
+	padding:5px;
+	padding-top:18px;
+	padding-bottom:18px;
+	background-color: #2b3038;
+	color: #fff;
+	border-bottom: 1px solid #eee;
+	border-collapse: collapse;
+}
+
+.nav li:hover {
+	background-color: #000;
+}
+.no-gutter {
+	margin-right:0px;
+	padding-right:0px;
+}
+.header {
+	background-color: #00CA79;
+	margin-left:15px;
+    padding:5px;	
+}
+.title {
+	color: #fff;			
+    background: #202020;
+    width: 248px;
+    text-align: center;
+    height: 76px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    padding-top: 25px;
+    text-transform: uppercase;
+}
+.page-inner {
+    margin: 20px;
+    padding: 15px;
+    background-color: #fff;
+}

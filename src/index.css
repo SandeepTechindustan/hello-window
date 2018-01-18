@@ -1,20 +1,8 @@
-.bg-dblue {
-	background-color: #fff;
-	color: #1f2733;
+.dashboard{
+	padding:30px;
+	align-items: 20px
 }
 
 body {
-	margin: auto 0px;
-}
-.padding-10 {
-	padding: 10px;
-}
-
-.text-right {
-	float: right;
-}
-
-.align-middle {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
